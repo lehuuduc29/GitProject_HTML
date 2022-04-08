@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartoon</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    /* mobile first */
+    header {
+        width: 100%;
+        height: 280px;
+        background-color: #fb923c;
+        display: block;
+        position: fixed;
+        top: 0px;
+    }
+
+    img {
+        display: block;
+        margin: 2px auto;
+    }
+
+    header span {
+        display: block;
+        font-size: 30px;
+        text-align: center;
+        margin: 2px auto;
+    }
+
+    nav {
+        width: 100%;
+        height: auto;
+        background-color: #f4f4f5;
+        display: block;
+        text-align: center;
+        margin-bottom: 5px;
+        margin-top: 282px;
+    }
+
+    nav ul {
+        list-style: none;
+    }
+
+    nav ul li {
+        display: block;
+        height: auto;
+        font-size: 23px;
+        padding: 5px 10px;
+    }
+
+    section {
+        width: 100%;
+    }
+
+    .atr_1 {
+        display: block;
+        width: 100%;
+        background-color: #a3e635;
+        padding-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .atr_2 {
+        display: block;
+        width: 100%;
+        background-color: #f3f4f6;
+    }
+
+    iframe {
+        width: 100%;
+        height: 250px;
+    }
+
+    a {
+        color: black;
+        text-decoration: none;
+    }
+
+    footer {
+        width: 100%;
+        height: 80px;
+        margin-top: 0px;
+        background-color: black;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .atr_1 p {
+        text-align: center;
+    }
+
+    .atr_2 p {
+        text-align: justify;
+        padding: 2px 5px;
+    }
+
+    /* respone */
+
+    @media only screen and (min-width:768px) {
+        header {
+            width: 100%;
+            height: 100px;
+            display: flex;
+            align-items: center;
+        }
+
+        img {
+            width: 150px;
+            height: 80px;
+            border: 1px solid black;
+            margin: auto 5px;
+        }
+
+        header span {
+            margin-left: 35%;
+            font-size: 30px;
+        }
+
+        nav {
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 105px;
+            margin-bottom: 5px;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav ul li {
+            display: inline-block;
+            font-size: 20px;
+            padding: 5px 10px;
+        }
+
+        section {
+            width: 100%;
+        }
+
+        .atr_1 {
+            width: 29%;
+            margin-right: 0.5%;
+            float: left;
+            background-color: #a3e635;
+            text-align: center;
+            padding-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .atr_2 {
+            width: 70%;
+            margin-left: 0.5%;
+            padding-top: 10px;
+            background-color: #f3f4f6;
+            text-align: left;
+            float: left;
+        }
+
+        .atr_1 iframe {
+            width: 90%;
+            height: 250px;
+        }
+
+        .atr_2 iframe {
+            width: 100%;
+            height: 500px;
+        }
+    }
+</style>
+
+<body>
+    <header>
+        <img src="./tải xuống.jpeg" alt="anh minh hoa">
+        <span>CARTOON PLUS</span>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Phim hoạt hình</a></li>
+            <li>|</li>
+            <li><a href="#">Phim hoạt hình yêu thích</a></li>
+            <li>|</li>
+            <li><a href="#">Nhân vật hoạt hình</a></li>
+            <li>|</li>
+            <li><a href="#">Góp ý</a></li>
+        </ul>
+    </nav>
+    <section>
+        <article class="atr_1">
+            <iframe src="https://www.youtube.com/embed/7Pi-LIBVxGA" title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <p>Doraemon 1</p>
+
+            <iframe src="https://www.youtube.com/embed/LWUnbC9Csw8" title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <p>Doraemon 2</p>
+
+            <iframe src="https://www.youtube.com/embed/W6pyngcRFr8" title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <p>Doraemon 3</p>
+
+            <iframe src="https://www.youtube.com/embed/ra0Y2p1uRlA" title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <p>Doraemon 4</p>
+        </article>
+        <article class="atr_2">
+            <iframe src="https://www.youtube.com/embed/1sKZTWxjT-8" title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <p>Bộ truyện kể về một chú mèo máy tên Doraemon đến từ thế kỉ 22 để giúp một cậu bé lớp 5 hậu đậu tên là
+                Nobi Nobita.
+                Sewashi (Nobito), cháu ba đời của Nobita gửi Doraemon về quá khứ nhằm giúp đỡ ông mình, qua đó cải thiện
+                được hoàn cảnh của con cháu Nobita sau này.
+
+                Các tập phim Doraemon thường xoay quanh những rắc rối hay xảy ra với cậu bé Nobita. Cốt truyện thường
+                gặp nhất là Nobita trở về nhà khóc lóc với
+                Doraemon vì những rắc rối mà cậu gặp phải ở trường học hoặc với bạn bè. Sau khi bị cậu van nài hoặc thúc
+                giục, Doraemon sẽ lấy ra một bảo bối
+                trong chiếc túi thần kỳ trước bụng để giúp Nobita giải quyết rắc rối của mình.
+
+                Nhưng Nobita sẽ lại thường đi quá xa so với dự định ban đầu của Doraemon. Cậu thường lấy sự ưu việt của
+                bảo bối để trêu ghẹo mọi người nên cuối cùng
+                bị phản tác dụng, bị bảo bối gây phiền phức. Có đôi khi những người bạn của Nobita, thường là Suneo hoặc
+                Jaian lại lấy trộm những bảo bối và sử dụng chúng
+                không đúng mục đích. Kết thúc mỗi câu chuyện, những ai sử dụng sai mục đích bảo bối sẽ phải chịu hậu quả
+                do mình gây ra, từ đó khán giả sẽ rút ra được bài học
+                cho riêng mình.</p>
+        </article>
+    </section>
+    <footer>
+        <p>Made by LHD</p>
+    </footer>
+</body>
+
+</html>
