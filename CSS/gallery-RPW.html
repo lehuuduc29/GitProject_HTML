@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    /* mobile first ứng với trường hợp screen < 500px */
+    .content_head,
+    .content_foot {
+        width: 100%;
+        height: 100px;
+    }
+
+    h1,
+    h3 {
+        text-align: center;
+    }
+
+    .content_main {
+        width: 100%;
+        height: auto;
+        margin-top: 10px;
+    }
+
+    img {
+        width: 100%;
+        height: 300px;
+    }
+
+    .content_main p {
+        text-align: center;
+    }
+
+    .content_main>div {
+        border: 2px solid red;
+        margin: 10px;
+    }
+
+    /* ứng với các màn hình nhỏ hơn 700px thì hiển thị 2 ảnh trên cùng một dòng. */
+    @media only screen and (min-width:500px) and (max-width:700px) {
+
+        h1,
+        h3 {
+            text-align: left;
+        }
+
+        .content_main>div {
+            width: 48%;
+            border: 2px solid black;
+            margin: 10px 1%;
+            float: left;
+        }
+
+        .content_foot {
+            clear: both;
+        }
+    }
+
+    /* Với các màn hình có độ rộng lớn hơn 700px thì hiển thị 4 ảnh trên cùng một dòng. */
+
+    @media only screen and (min-width:701px) {
+
+        h1,
+        h3 {
+            text-align: left;
+        }
+
+        .content_main>div {
+            width: 23%;
+            border: 2px solid black;
+            margin: 10px 1%;
+            float: left;
+        }
+
+        .content_foot {
+            clear: both;
+        }
+    }
+</style>
+
+<body>
+    <div class="content_head">
+        <h1>Responsive Image Gallery</h1>
+        <h3>Resize the browser window to see the effect.</h3>
+    </div>
+    <div class="content_main">
+        <div>
+            <img src="https://demo.codegym.vn/web/15/gallery/img_fjords.jpg" alt="anh minh hoa">
+            <p>Add a description of the image here</p>
+        </div>
+        <div>
+            <img src="https://demo.codegym.vn/web/15/gallery/img_forest.jpg" alt="anh minh hoa">
+            <p>Add a description of the image here</p>
+        </div>
+        <div>
+            <img src="https://demo.codegym.vn/web/15/gallery/img_lights.jpg" alt="anh minh hoa">
+            <p>Add a description of the image here</p>
+        </div>
+        <div>
+            <img src="https://demo.codegym.vn/web/15/gallery/img_mountains.jpg" alt="anh minh hoa">
+            <p>Add a description of the image here</p>
+        </div>
+    </div>
+    <div class="content_foot">
+        <p>This example use media queries to re-arrange the images on different screen sizes: for screens larger than
+            700px
+            wide,
+            it will show four images side by side, for screens smaller than 700px,
+            it will show two images side by side. For screens smaller than 500px, the images will stack vertically
+            (100%).
+        </p>
+    </div>
+</body>
+
+</html>
